@@ -1,0 +1,157 @@
+
+/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+
+/**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+
+[hidden] {
+    display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/**
+ * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    font-size: 100%; /* 1 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/**
+ * Address `font-family` inconsistency between `textarea` and other form
+ * elements.
+ */
+
+html,
+button,
+input,
+select,
+textarea {
+    font-family: sans-serif;
+}
+
+/**
+ * Address margins handled incorrectly in IE 6/7.
+ */
+
+body {
+	background-color:blue;
+    margin: 0;
+    padding: 0;
+    color:white;
+    font-family: Arial Black;
+    height:100%;
+    width:100%;
+}
+
+input:focus, textarea:focus {outline: none; }
+
+a { color:white; border-bottom:2px solid white; text-decoration: none;}
+
+textarea {
+    overflow: none; /* 1 */
+    vertical-align: top; /* 2 */
+    position:relative;
+    left:80px;
+    right:80px;
+    height:65%;
+    border:none;
+    resize:none;
+    background-color: transparent;
+    color:yellow;
+    font-weight: bold;
+    font-size: 3.5em;
+    margin-bottom:5%;
+    font-family: Arial Black;
+}
+
+footer {
+	position: relative;
+	padding-left: 80px;
+	padding-right: 80px;
+	bottom:0px;
+	height:10%;
+}
+
+#left{
+	float: left;
+}
+#right{
+	float: right;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+#question{
+	font-size:3.8em;
+	height:7%;
+	width:60%;
+	padding-top:3%;
+	padding-left:80px;
+
+}
+.twitter-share-button{
+	position:absolute;
+	float:right;
+	top:80px;
+	right:200px;
+}
+.fb-like{
+	position:absolute;
+	float:right;
+	top:80px;
+	right:80px;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+

@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Snort Snort</title>
+        <!-- NEW -->
+         <link href="styles/style.css" rel="stylesheet" type="text/css">
+        <script src="scripts/bcsocket.js"></script>             <!-- add transport -->
+        <script src="scripts/webclient/share.js"></script>      <!-- ShareJS -->
+        <script src="scripts/webclient/textarea.js"></script>   <!-- helper to attach textarea to ShareJS server 
+        -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="scripts/jq.js"></script>
+    </head>
+    <body>
+
+    
+    <div id="fb-root"></div>
+
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=262405860539365";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	        <div class="fb-like" data-href="http://snort.snormagazine.com" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+	        <a href="https://twitter.com/share" class="twitter-share-button" data-via="SnorMagazine">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        
+
+        <h1 id="question">Snort Snort</h1>
+        <textarea id='sharetext' ></textarea>
+        <!-- NEW -->
+        <script>
+            // get the textarea element 
+            var elem = document.getElementById("sharetext");
+            // connect to the server
+            var connection = sharejs.open('test', 'text', function(error, doc) {
+                // this function is called once the connection is opened
+                if (error) {
+                    console.log("ERROR:", error);
+                } else {
+                    // attach the ShareJS document to the textarea
+                    doc.attach_textarea(elem);
+                }
+            });
+        </script>
+
+        <!-- /NEW -->
+    </body>
+    <footer>
+    	<div id="left">
+    	Made with <a href="http://nodejs.org/">Node.js</a>
+    	</div>
+        <div id="right">
+        Developed by <a href="http://unsalted.nu/">Nick Meehan</a> for <a href="http://snormagazine.com/">Snor</a>
+        </div>
+    </footer>
+</html>
